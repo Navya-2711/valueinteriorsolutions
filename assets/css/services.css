@@ -235,3 +235,127 @@
     font-size: 18px;
   }
 }
+
+/*--------------------------------------------------------------
+# FAQ Section
+--------------------------------------------------------------*/
+.faq-section {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.faq-section .section-title h2 {
+  color: #005F88;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.faq-section .accordion-button {
+  font-weight: 600;
+  color: #005F88;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px !important;
+  padding: 15px 20px;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background: #005F88;
+  color: #fff;
+  border-color: #005F88;
+}
+
+.faq-section .accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 95, 136, 0.25);
+}
+
+.faq-section .accordion-body {
+  color: #555;
+  line-height: 1.6;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+.faq-section .accordion-item {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+# Reviews Section
+--------------------------------------------------------------*/
+.reviews-section {
+  padding: 60px 0;
+}
+
+.reviews-section .section-title h2 {
+  color: #005F88;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.review-rating {
+  color: #FFD700;
+  font-size: 24px;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+}
+
+.review-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #005F88;
+  margin-bottom: 5px;
+}
+
+.review-location {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.review-location i {
+  margin-right: 5px;
+  color: #F09143;
+}
+
+.review-comment {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .faq-section .section-title h2,
+  .reviews-section .section-title h2 {
+    font-size: 28px;
+  }
+  
+  .review-card {
+    padding: 20px;
+  }
+}
