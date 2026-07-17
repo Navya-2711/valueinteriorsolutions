@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
-  margin: 5px 0;
+  margin: 0;
   padding: 0;
   z-index: 99;
   opacity: 1;
@@ -361,10 +361,12 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none;
 }
 .navbar-mobile .dropdown ul li {
-  min-width: 200px;
+  margin: 0;
+  padding: 0;
+  min-width: auto;
 }
 .navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
+  padding: 8px 0 8px 20px;
 }
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
@@ -1494,15 +1496,19 @@ section {
   }
   
   .navbar ul li {
-    margin: 5px 0;
+    margin: 0;
     width: 100%;
+  }
+  
+  .navbar ul li:not(.dropdown) {
+    margin: 5px 0;
   }
   
   .navbar .dropdown ul {
     position: static;
     box-shadow: none;
     padding: 0;
-    margin: 5px 0;
+    margin: 0;
     width: 100%;
     max-width: none;
     display: none;
