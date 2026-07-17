@@ -97,6 +97,13 @@
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
+    
+    // Prevent body scroll when mobile menu is open
+    if (select('#navbar').classList.contains('navbar-mobile')) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
   })
 
   /**
@@ -122,6 +129,8 @@
         let navbarToggle = select('.mobile-nav-toggle')
         navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
+        // Restore body scroll
+        document.body.style.overflow = ''
       }
       scrollto(this.hash)
     }
