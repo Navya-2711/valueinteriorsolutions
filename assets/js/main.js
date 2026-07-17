@@ -113,6 +113,13 @@
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
+      // Toggle class on parent li to control spacing
+      this.parentElement.classList.toggle('dropdown-open')
+      // Add class to next sibling to add spacing
+      const nextLi = this.parentElement.nextElementSibling
+      if (nextLi) {
+        nextLi.classList.toggle('after-dropdown')
+      }
     }
   }, true)
 
