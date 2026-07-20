@@ -625,6 +625,17 @@ section {
   color: #848484;
   margin-left: 60px;
 }
+.about .content .icon-box ul {
+  padding-left: 0;
+  list-style-position: inside;
+  margin-left: 60px;
+  margin-bottom: 15px;
+}
+.about .content .icon-box ul li {
+  padding-left: 0;
+  margin-left: 0;
+  text-align: left;
+}
 .about .image {
   background: url("../img/about.jpg") center center no-repeat;
   background-size: cover;
@@ -1672,6 +1683,23 @@ section {
   
   .about .content ul li {
     font-size: 14px;
+  }
+  
+  .about .content .icon-box ul {
+    margin-left: 0;
+  }
+  
+  .about .content .icon-box p {
+    margin-left: 0;
+  }
+  
+  .about .content .icon-box h4 {
+    margin-left: 0;
+  }
+  
+  .about .content .icon-box i {
+    float: none;
+    margin-bottom: 10px;
   }
 }
 
