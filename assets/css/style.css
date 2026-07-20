@@ -1584,6 +1584,42 @@ section {
 # Enhanced Mobile Responsiveness
 --------------------------------------------------------------*/
 
+
+.icon-box .d-flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-box .d-flex i {
+    flex-shrink: 0;
+    font-size: 42px;
+    color: #0d6efd;
+}
+
+.icon-box .d-flex h4 {
+    margin: 0;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .icon-box .d-flex {
+        align-items: center;
+    }
+
+    .icon-box .d-flex h4 {
+        font-size: 24px;
+    }
+
+    .icon-box .d-flex i {
+        font-size: 36px;
+    }
+}
+
+
+
+
+
 /* Mobile Navigation */
 @media (max-width: 991px) {
   .navbar ul {
